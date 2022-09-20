@@ -114,8 +114,6 @@ public class proyecto3 extends javax.swing.JFrame {
         crearcuentaboton = new javax.swing.JButton();
         importancia = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jComboBox_editarpersonas = new javax.swing.JComboBox<>();
         admin = new javax.swing.JDialog();
         botonlistarusuarios = new javax.swing.JButton();
         jb_modificarusuarios = new javax.swing.JButton();
@@ -170,6 +168,21 @@ public class proyecto3 extends javax.swing.JFrame {
         jList3 = new javax.swing.JList<>();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        editarcuenta = new javax.swing.JPanel();
+        importancia1 = new javax.swing.JComboBox<>();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        nombrepersonacuenta1 = new javax.swing.JTextField();
+        jComboBox_editarpersonas1 = new javax.swing.JComboBox<>();
+        edad1 = new javax.swing.JSpinner();
+        jLabel21 = new javax.swing.JLabel();
+        username1 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        contracrearusuario1 = new javax.swing.JTextField();
+        crearcuentaboton1 = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         pf_contrasenia = new javax.swing.JPasswordField();
@@ -532,8 +545,6 @@ public class proyecto3 extends javax.swing.JFrame {
 
         jLabel12.setText("Rol:");
 
-        jLabel16.setText("Seleccione la persona a editar:");
-
         javax.swing.GroupLayout crearunacuentaLayout = new javax.swing.GroupLayout(crearunacuenta);
         crearunacuenta.setLayout(crearunacuentaLayout);
         crearunacuentaLayout.setHorizontalGroup(
@@ -547,44 +558,35 @@ public class proyecto3 extends javax.swing.JFrame {
                             .addComponent(crearcuentaboton)))
                     .addGroup(crearunacuentaLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addGroup(crearunacuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(crearunacuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(crearunacuentaLayout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox_editarpersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(crearunacuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(crearunacuentaLayout.createSequentialGroup()
-                                    .addComponent(jLabel9)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(crearunacuentaLayout.createSequentialGroup()
-                                    .addComponent(jLabel8)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(nombrepersonacuenta, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE))
-                                .addGroup(crearunacuentaLayout.createSequentialGroup()
-                                    .addComponent(jLabel10)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(username))
-                                .addGroup(crearunacuentaLayout.createSequentialGroup()
-                                    .addComponent(jLabel11)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(contracrearusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(crearunacuentaLayout.createSequentialGroup()
-                                    .addComponent(jLabel12)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(importancia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(280, Short.MAX_VALUE))
+                                .addComponent(jLabel9)
+                                .addGap(18, 18, 18)
+                                .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(crearunacuentaLayout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(18, 18, 18)
+                                .addComponent(nombrepersonacuenta, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE))
+                            .addGroup(crearunacuentaLayout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addGap(18, 18, 18)
+                                .addComponent(username))
+                            .addGroup(crearunacuentaLayout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addGap(18, 18, 18)
+                                .addComponent(contracrearusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(crearunacuentaLayout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addGap(18, 18, 18)
+                                .addComponent(importancia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
         crearunacuentaLayout.setVerticalGroup(
             crearunacuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(crearunacuentaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
-                .addGap(40, 40, 40)
-                .addGroup(crearunacuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(jComboBox_editarpersonas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
+                .addGap(93, 93, 93)
                 .addGroup(crearunacuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(nombrepersonacuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1064,6 +1066,109 @@ public class proyecto3 extends javax.swing.JFrame {
                 .addGap(71, 71, 71))
         );
 
+        importancia1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Usuario" }));
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel18.setText("Editar Cuenta");
+
+        jLabel19.setText("Proporcione su Nombre: ");
+
+        jLabel20.setText("Seleccione la persona a editar:");
+
+        edad1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 122, 1));
+
+        jLabel21.setText("Nombre de Usuario:");
+
+        jLabel22.setText("Contrasenia: ");
+
+        crearcuentaboton1.setText("Modificar");
+        crearcuentaboton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                crearcuentaboton1MouseClicked(evt);
+            }
+        });
+
+        jLabel23.setText("Edad:");
+
+        jLabel24.setText("Rol:");
+
+        javax.swing.GroupLayout editarcuentaLayout = new javax.swing.GroupLayout(editarcuenta);
+        editarcuenta.setLayout(editarcuentaLayout);
+        editarcuentaLayout.setHorizontalGroup(
+            editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(editarcuentaLayout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(editarcuentaLayout.createSequentialGroup()
+                        .addGap(234, 234, 234)
+                        .addComponent(crearcuentaboton1))
+                    .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(editarcuentaLayout.createSequentialGroup()
+                            .addComponent(jLabel21)
+                            .addGap(18, 18, 18)
+                            .addComponent(username1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(editarcuentaLayout.createSequentialGroup()
+                            .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(editarcuentaLayout.createSequentialGroup()
+                                    .addComponent(jLabel19)
+                                    .addGap(18, 18, 18))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editarcuentaLayout.createSequentialGroup()
+                                    .addComponent(jLabel23)
+                                    .addGap(42, 42, 42)))
+                            .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(edad1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(nombrepersonacuenta1)))
+                        .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(editarcuentaLayout.createSequentialGroup()
+                                .addComponent(jLabel24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(importancia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(editarcuentaLayout.createSequentialGroup()
+                                .addComponent(jLabel22)
+                                .addGap(18, 18, 18)
+                                .addComponent(contracrearusuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(editarcuentaLayout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(jComboBox_editarpersonas1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(179, Short.MAX_VALUE))
+        );
+        editarcuentaLayout.setVerticalGroup(
+            editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, editarcuentaLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel18)
+                .addGap(40, 40, 40)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jComboBox_editarpersonas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(nombrepersonacuenta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(edad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23))
+                .addGap(33, 33, 33)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(username1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(contracrearusuario1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(editarcuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(importancia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addComponent(crearcuentaboton1)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Entrar ");
 
@@ -1356,7 +1461,7 @@ public class proyecto3 extends javax.swing.JFrame {
                     } else {
                         b = "false";
                     }
-                    x1.query.execute(" INSERT INTO usuarios (nombre,contra,importancia,todo,correo,dropbox)  VALUES ('" + username.getText() + "','" + contracrearusuario.getText() + "','" + b + "' 'true','true','true')");
+                    x1.query.execute(" INSERT INTO usuarios (nombre,contra,importancia,todo,correo,dropbox)  VALUES ('" + username.getText() + "','" + contracrearusuario.getText() + "','" + b + "', 'true','true','true')");
                     JOptionPane.showMessageDialog(Entrar, "Usuario agregado");
                     invisible(crearunacuenta);
                     crearunacuenta.setVisible(false);
@@ -1428,8 +1533,7 @@ public class proyecto3 extends javax.swing.JFrame {
     }//GEN-LAST:event_botonlistarusuariosActionPerformed
 
     private void crearusuariobotonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearusuariobotonMouseClicked
-        jLabel16.setVisible(false);
-        jComboBox_editarpersonas.setEnabled(false);
+       
  
         invisible(listarusuarios);
         listarusuarios.setVisible(false);
@@ -1705,25 +1809,24 @@ public class proyecto3 extends javax.swing.JFrame {
     }//GEN-LAST:event_marcarcomoimportanteMouseClicked
 
     private void jb_modificarusuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_modificarusuariosMouseClicked
-        jLabel7.setText("Modificar una Cuenta");
-        crearcuentaboton.setText("Modificar!");
+       
 
         invisible(listarusuarios);
         listarusuarios.setVisible(false);
         invisible(eliminarusuarios);
         eliminarusuarios.setVisible(false);
-        visible(crearunacuenta);
-        crearunacuenta.setVisible(true);
+        visible(editarcuenta);
+        editarcuenta.setVisible(true);
 
-        crearunacuenta.setSize(631, 401);
-        crearunacuenta.setLocation(350, 100);
+        editarcuenta.setSize(560, 444);
+        editarcuenta.setLocation(350, 100);
         admin.add(crearunacuenta, BorderLayout.CENTER);
         admin.revalidate();
         admin.repaint();
 
         dba x1 = new dba("./Database2.accdb");
         x1.conectar();
-        DefaultComboBoxModel dc = (DefaultComboBoxModel) jComboBox_editarpersonas.getModel();
+        DefaultComboBoxModel dc = (DefaultComboBoxModel) jComboBox_editarpersonas1.getModel();
         try {
             x1.query.execute("select nombre from usuarios");
 
@@ -1734,12 +1837,12 @@ public class proyecto3 extends javax.swing.JFrame {
                 dc.addElement(rs.getString(1));
 
             }// fin de while
-           jComboBox_editarpersonas.setModel(dc); 
+           jComboBox_editarpersonas1.setModel(dc); 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        String temp = (String) jComboBox_editarpersonas.getSelectedItem();
+        String temp = (String) jComboBox_editarpersonas1.getSelectedItem();
         try {
             x1.query.execute("select nombre, contra from usuarios where nombre = '" + temp + "'");
             ResultSet rs = x1.query.getResultSet();
@@ -1947,9 +2050,25 @@ public class proyecto3 extends javax.swing.JFrame {
         x1.desconectar();        
     }//GEN-LAST:event_jb_tareasimportantesMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
+    private void crearcuentaboton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearcuentaboton1MouseClicked
+        dba x1 = new dba("./Database2.accdb");
+        x1.conectar();
+        try {
+            x1.query.execute("update usuarios set nombre = '"+ nombrepersonacuenta1.getText() +"','"+ "'");
+
+            ResultSet rs = x1.query.getResultSet();
+
+            while (rs.next()) {
+                
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+        x1.desconectar();    
+    }//GEN-LAST:event_crearcuentaboton1MouseClicked
+
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -2003,18 +2122,23 @@ public class proyecto3 extends javax.swing.JFrame {
     private javax.swing.JButton colorletra1;
     private javax.swing.JComboBox<String> combobox_personas;
     private javax.swing.JTextField contracrearusuario;
+    private javax.swing.JTextField contracrearusuario1;
     private javax.swing.JDialog correo;
     private javax.swing.JButton crearcuentaboton;
+    private javax.swing.JButton crearcuentaboton1;
     private javax.swing.JButton creartarea;
     private javax.swing.JPanel crearunacuenta;
     private javax.swing.JButton crearusuarioboton;
     private javax.swing.JDialog dropbox;
     private javax.swing.JSpinner edad;
+    private javax.swing.JSpinner edad1;
+    private javax.swing.JPanel editarcuenta;
     private javax.swing.JMenuItem eliminar;
     private javax.swing.JPanel eliminarusuarios;
     private javax.swing.JComboBox<String> estiloletra;
     private javax.swing.JComboBox<String> estiloletra1;
     private javax.swing.JComboBox<String> importancia;
+    private javax.swing.JComboBox<String> importancia1;
     private javax.swing.JButton italicletra;
     private javax.swing.JButton italicletra1;
     private javax.swing.JButton jButton1;
@@ -2028,7 +2152,7 @@ public class proyecto3 extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JButton jButton_logincomousuario;
-    private javax.swing.JComboBox<String> jComboBox_editarpersonas;
+    private javax.swing.JComboBox<String> jComboBox_editarpersonas1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2036,9 +2160,15 @@ public class proyecto3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -2078,6 +2208,7 @@ public class proyecto3 extends javax.swing.JFrame {
     private javax.swing.JButton negritaletra;
     private javax.swing.JButton negritaletra1;
     private javax.swing.JTextField nombrepersonacuenta;
+    private javax.swing.JTextField nombrepersonacuenta1;
     private javax.swing.JPanel permisosaplicaciones;
     private javax.swing.JPasswordField pf_contrasenia;
     private javax.swing.JButton redactar;
@@ -2094,6 +2225,7 @@ public class proyecto3 extends javax.swing.JFrame {
     private javax.swing.JTextField tf_nombre;
     private javax.swing.JTextField tf_nombredeusuario;
     private javax.swing.JTextField username;
+    private javax.swing.JTextField username1;
     // End of variables declaration//GEN-END:variables
 StyledDocument doc;
     Style estilo;
