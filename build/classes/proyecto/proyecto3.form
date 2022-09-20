@@ -1507,6 +1507,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="contracrearusuario1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="contracrearusuario1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="crearcuentaboton1">
           <Properties>

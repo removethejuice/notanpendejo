@@ -1081,6 +1081,12 @@ public class proyecto3 extends javax.swing.JFrame {
 
         jLabel22.setText("Contrasenia: ");
 
+        contracrearusuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contracrearusuario1ActionPerformed(evt);
+            }
+        });
+
         crearcuentaboton1.setText("Modificar");
         crearcuentaboton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1815,12 +1821,16 @@ public class proyecto3 extends javax.swing.JFrame {
         listarusuarios.setVisible(false);
         invisible(eliminarusuarios);
         eliminarusuarios.setVisible(false);
+        invisible(crearunacuenta);
+        crearunacuenta.setVisible(false);
+        invisible(permisosaplicaciones);
+        permisosaplicaciones.setVisible(false);
         visible(editarcuenta);
         editarcuenta.setVisible(true);
 
         editarcuenta.setSize(560, 444);
         editarcuenta.setLocation(350, 100);
-        admin.add(crearunacuenta, BorderLayout.CENTER);
+        admin.add(editarcuenta, BorderLayout.CENTER);
         admin.revalidate();
         admin.repaint();
 
@@ -2053,20 +2063,24 @@ public class proyecto3 extends javax.swing.JFrame {
     private void crearcuentaboton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearcuentaboton1MouseClicked
         dba x1 = new dba("./Database2.accdb");
         x1.conectar();
+        String banx ="";
+        if (importancia1.getSelectedItem().equals("Administrador")){
+        banx = "true";
+        }
         try {
-            x1.query.execute("update usuarios set nombre = '"+ nombrepersonacuenta1.getText() +"','"+ "'");
+            x1.query.execute("update usuarios set nombre = '"+ username1.getText() +"',contra ='"+contracrearusuario1.getText()+ "',importancia ='"+banx+"'");
 
-            ResultSet rs = x1.query.getResultSet();
-
-            while (rs.next()) {
-                
-            }
+       JOptionPane.showMessageDialog(this,"Usuario Modificado");
         } catch (Exception e) {
             e.printStackTrace();
 
         }
         x1.desconectar();    
     }//GEN-LAST:event_crearcuentaboton1MouseClicked
+
+    private void contracrearusuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contracrearusuario1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contracrearusuario1ActionPerformed
 
     
     public static void main(String args[]) {
