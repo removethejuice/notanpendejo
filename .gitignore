@@ -3,4 +3,5 @@
 /nbproject/private/
 build.xml
 /build/*
+/build/classes/*
 /nbproject/*
